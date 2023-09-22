@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Buff监控平台</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            /* background-color: pink; */
+            width: 100%;
+            height: 440px;
+            margin: auto;
+            color: pink;
+            text-align: center;
+            line-height: 440px;
+            background-image: url(https://buff.163.com/static/images/site/index-header-bg.jpg);
+        }
+
+        .body {
+            width: 100%;
+            background: url(https://buff.163.com/static/images/site/index-section1-bg.jpg) no-repeat;
+            text-align: center;
+            background-color: rgb(226, 223, 223);
+        }
+
+        .content {
+            width: 80%;
+            margin: auto;
+        }
+
+        .list {
+            background-color: rgb(84, 80, 80);
+            width: 200px;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .img {
+            width: 100%;
+            height: 200px;
+            background: url(https://g.fp.ps.netease.com/market/file/5a86ee1020e3db3287c8b0bbSu4yojTJ) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .mosundu {
+            top: 182px;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            position: relative;
+            text-align: center;
+            background-color: rgb(38, 41, 41);
+        }
+
+        .text {
+            background-color: white;
+            width: 100%;
+            height: 120px;
+            line-height: 30px;
+        }
+        .money{
+            float: left;
+            padding-left: 10px;
+        }
+        h4{
+            font-size: 12px;
+        }
+        a{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <h1>Cold的窝提供     <a href="http://iloveworld.love">回家路线</a></h1>
+
+</div>
+<div class="body">
+    <div class="content">
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear1}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name1}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff1}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam1}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e1}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear2}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name2}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff2}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam2}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e2}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear3}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name3}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff3}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam3}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e3}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear4}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name4}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff4}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam4}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e4}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear5}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name5}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff5}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam5}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e5}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear6}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name6}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff6}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam6}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e6}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear7}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name7}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff7}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam7}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e7}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear8}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name8}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff8}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam8}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e8}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear9}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name9}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff9}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam9}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e9}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear10}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name10}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff10}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam10}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e10}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear11}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name11}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff11}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam11}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e11}"></span><br>
+            </div>
+        </div>
+        <div class="list">
+            <div class="img">
+                <div class="mosundu" th:text="${wear12}"></div>
+            </div>
+            <div class="text">
+                <h4 style="text-align: center" th:text="${name12}"></h4>
+                <span class="money"><b>buff:</b></span><span style="float:right;padding-right: 10px;" th:text="${buff12}"></span><br>
+                <span class="money"><b>steam:</b></span><span style="float:right;padding-right: 10px;" th:text="${steam12}"></span><br>
+                <span class="money"><b>e5:</b></span><span style="float:right;padding-right: 10px;" th:text="${e12}"></span><br>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
